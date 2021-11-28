@@ -13,7 +13,7 @@ public class NumBox <T extends Number> {
 
     public void add(T t){
         if(index >= size) {
-            throw new IndexOutOfBoundsException("Вихід за межі масиву");
+            throw new IndexOutOfBoundsException("Выход за пределы массива");
         }
         list[index] = t;
         index += 1;
@@ -21,7 +21,7 @@ public class NumBox <T extends Number> {
 
     public T get(int index){
         if(index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("Вихід за межі масиву");
+            throw new IndexOutOfBoundsException("Выход за пределы массива");
         }
         return list[index];
     }
